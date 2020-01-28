@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3BD9D"
+        tools:context=".AdminGoodsAddActivity">
+
+    <Button
+            android:textColor="#FFFFFF"
+            android:text="@string/add_goods"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_please_login"
+            android:layout_height="55dp"
+            android:id="@+id/btnEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/editGoodsPrice" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <android.support.constraint.ConstraintLayout
+            android:background="#eeeeee"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/constraintLayout3"
+            android:layout_marginTop="0dp">
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/ic_mountains"
+                android:id="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:scaleType="centerInside"
+                tools:ignore="VectorDrawableCompat"
+                android:contentDescription="@string/todo"/>
+    </android.support.constraint.ConstraintLayout>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editGoodsName"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:hint="@string/good"
+            android:autofillHints=""
+            tools:targetApi="o"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editGoodsDetail"
+            app:layout_constraintStart_toStartOf="@+id/editGoodsName"
+            app:layout_constraintEnd_toEndOf="@+id/editGoodsName"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/editGoodsName"
+            android:hint="@string/goods_detail_2"
+            android:autofillHints=""/>
+
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editGoodsPrice"
+            app:layout_constraintStart_toStartOf="@+id/editGoodsName"
+            app:layout_constraintEnd_toEndOf="@+id/editGoodsName"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/editGoodsDetail"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:hint="@string/goods_price_2"
+            android:importantForAutofill="no"
+            tools:targetApi="o"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editGoodsContact"
+            app:layout_constraintStart_toStartOf="@+id/editGoodsName"
+            app:layout_constraintEnd_toEndOf="@+id/editGoodsName"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="136dp"
+            app:layout_constraintTop_toBottomOf="@+id/editGoodsName"
+            android:hint="@string/editGoodsContact"
+            android:autofillHints=""/>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3BD9D"
+        tools:context=".editUser">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtUsername"
+                android:hint="ชื่อผู้ใช้งาน"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="48dp"
+                android:layout_marginStart="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/txtPassword"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtUsername"
+                app:layout_constraintStart_toStartOf="@+id/txtUsername"
+                app:layout_constraintEnd_toEndOf="@+id/txtUsername"
+                android:hint="รหัสผ่าน"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtName"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+                app:layout_constraintStart_toStartOf="@+id/txtUsername"
+                app:layout_constraintEnd_toEndOf="@+id/txtUsername"
+                android:hint="ชื่อ - นามสกุล"/>
+
+
+        <Button
+                android:textColor="#FFFFFF"
+                android:text="แก้ไขข้อมูลเรียบร้อย"
+                android:layout_width="0dp"
+                android:background="@drawable/btn_please_login"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnEditUser"
+                app:layout_constraintEnd_toEndOf="@+id/txtName"
+                app:layout_constraintStart_toStartOf="@+id/txtName"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtName"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp"/>
+    </android.support.constraint.ConstraintLayout>
+    <TextView
+            android:text="  แก้ไขข้อมูล่วนตัว"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            tools:layout_editor_absoluteY="178dp"
+            tools:layout_editor_absoluteX="129dp"
+            android:id="@+id/textView4"
+            tools:ignore="MissingConstraints"/>
+
+</android.support.constraint.ConstraintLayout>

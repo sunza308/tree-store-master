@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Tree Store</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading">กำลังโหลด...</string>
+    <string name="add_goods">เพิ่มสินค้า</string>
+    <string name="todo">TODO</string>
+    <string name="good">ชื่อสินค้า</string>
+    <string name="goods_detail_2">รายละเอียดสินค้า</string>
+    <string name="goods_price_2">ราคา</string>
+    <string name="login_image">Login Image</string>
+    <string name="alert1">คุณจำเป็นต้องเข้าใช้งานระบบก่อน</string>
+    <string name="login_please">เข้าใช้งานระบบ</string>
+    <string name="please_login">Please login</string>
+    <string name="please_login_2">กรุณาเข้าสู่ระบบก่อนใช้งาน</string>
+    <string name="flower">ไม้ดอก</string>
+    <string name="plant">ไม้ประดับ</string>
+    <string name="garden">พืชสวน</string>
+    <string name="User">user_1</string>
+    <string name="basket">basket_2</string>
+    <string name="home">home_2</string>
+    <string name="name_1">ชื่อผู้ใช้งาน</string>
+    <string name="register_1">สมัครสมาชิก</string>
+    <string name="tel_1">เบอร์โทรศัพท์</string>
+    <string name="password_1">รหัสผ่าน</string>
+    <string name="name_2">ชื่อ - นามสกุล</string>
+    <string name="facebook_1">Facebook</string>
+    <string name="qrcode">QRcode</string>
+    <string name="hint_enter_text_to_create_barcode"/>
+    <string name="editGoodsContact">ร้านค้า/ช่องทางการติดต่อ</string>
+</resources>
